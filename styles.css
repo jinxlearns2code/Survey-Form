@@ -1,0 +1,128 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1540845692348-b9d2bc813a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80://images.unsplash.com/photo-1555616200-465ffa134781?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80");
+    background-size: 350px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 820px;
+    margin: auto;
+    font-family: 'Klee One', cursive;
+    font-size: 20px;
+    border: 10px solid black;
+    padding: 1em;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+img {
+    width: 300px;
+}
+
+h1 {
+    margin-top: -75px;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: underline;
+}
+
+#description {
+    text-align: left;
+    margin: 1em;
+}
+
+fieldset {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.fieldset-body {
+    border: none;
+}
+
+span {
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.questions {
+    margin-bottom: 0;
+}
+
+.textbox,
+textarea {
+    width: 100%;
+    border: 1px solid;
+    min-height: 2em;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-left: .5em;
+    margin: 0;
+}
+
+textarea {
+    margin-top: 1em;
+}
+
+select {
+    min-height: 2em;
+    min-width: 6em;
+}
+
+input[type="checkbox"] {
+    margin: 0 0.5em 0 0;
+}
+
+.ratings {
+    display: inline;
+    padding: 15px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 150px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 100px;
+}
+
+@media (max-width: 910px) {
+    .ratings {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    img {
+        width: 200px;
+    }
+
+    h1 {
+        margin-top: -25px;
+    }
+
+    textarea {
+        max-width: 70%;
+    }
+
+    .container {
+        border: 2px solid black;
+    }
+}
